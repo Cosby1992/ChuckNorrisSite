@@ -1,37 +1,16 @@
 /* Navbar container */
 
-body {
-    background-color: #EBF4FA;
-}
-
-.title-container {
-    padding: 1vw;
-}
-
-.title-container h1 {
-    color: #206BA4;
-    font-family: 'Righteous', cursive;
-    font-size: 5vw;
-    margin-bottom: 0px;
-} 
-
-#isitalltrue {
-    margin-top: 0px;
-    margin-left: 3vw;
-    font-family: 'Righteous', cursive;
-    color: #C0C0C0;
-}
 
 .navbar {
     overflow: hidden;
     background-color: #206BA4;
-    font-family: Arial;
+    font-family: 'Big Shoulders Display', cursive;
   }
   
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: calc(16px + 0.5vw);
     color: #EBF4FA;
     text-align: center;
     padding: 14px 16px;
@@ -46,7 +25,7 @@ body {
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: calc(16px + 0.5vw);
     border: none;
     outline: none;
     color: #EBF4FA;
@@ -67,6 +46,7 @@ body {
     position: absolute;
     background-color: #EBF4FA;
     min-width: 160px;
+    max-width: 50%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -76,8 +56,9 @@ body {
     float: none;
     color: #206BA4;
     padding: 12px 16px;
+    font-size: calc(16px + 0.5vw);
     text-decoration: none;
-    display: block;
+    display: inline-block;
     text-align: left;
   }
   
@@ -96,9 +77,9 @@ body {
   }
   
   .navbar input[type=text] {
-    padding: 6px;
+    padding: 7.5px;
     margin-top: 8px;
-    font-size: 17px;
+    font-size: calc(16px + 0.3vw);
     border: none;
   }
   
@@ -108,13 +89,24 @@ body {
     margin-top: 8px;
     margin-right: 16px;
     background: #ddd;
-    font-size: 17px;
+    font-size: calc(17px + 0.45vw);
     border: none;
     cursor: pointer;
   }
   
   .navbar .search-container button:hover {
     background: #ccc;
+  }
+
+  #result {
+
+    float: right;
+    font-size: calc(16px + 0.5vw);
+    color: #EBF4FA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
   }
   
   @media screen and (max-width: 600px) {
@@ -129,6 +121,7 @@ body {
       margin: 0;
       padding: 14px;
     }
+
     .navbar input[type=text] {
       border: 1px solid #ccc;  
     }

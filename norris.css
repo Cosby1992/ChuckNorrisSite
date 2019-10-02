@@ -1,13 +1,35 @@
 
+body {
+    background-color: #EBF4FA;
+}
+
+.title-container {
+    padding: 1vw;
+}
+
+.title-container h1 {
+    color: #206BA4;
+    font-family: 'Righteous', cursive;
+    font-size: calc(20px + 4vw);
+    margin-bottom: 0px;
+} 
+
+#isitalltrue {
+    margin-top: 0px;
+    margin-left: 3vw;
+    font-family: 'Righteous', cursive;
+    font-size: calc(10px + 1vw);
+    color: #C0C0C0;
+}
 
 .main {
-    padding: 4vw;
+    padding: calc(10px + 6vw);
     margin-left: 1vw;
 }
 
 #random_joke {
 
-    font-size: 2.5em;
+    font-size: calc(15px + 1.2vw);
     font-family: 'Squada One', cursive;
 
 }

@@ -10,10 +10,11 @@
     <script src="rules.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="norris.css">
-    
+
 </head>
 
 <body>
@@ -30,23 +31,24 @@
 
     <nav class="navbar">
         <a href="#home">Home</a>
+        <a href="#" onclick="randomfact()">Random Fact</a>
         <div class="dropdown">
             <button class="dropbtn">Categories
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                
-            </div>
+            <div class="dropdown-content"></div>
         </div>
+        
         <div class="search-container">
-            <input id="inp_search"  type="text" placeholder="Search.." value=""/>
+            <input id="inp_search" type="text" placeholder="Search.." value="" />
             <button type="submit" onclick="search_func()" id="btn_submit"><i class="fa fa-search"></i></button>
         </div>
+        <div id="result"></div>
+
     </nav>
 
     <main class="main">
         <div id="random_joke">
-            hej
         </div>
     </main>
 
